@@ -1,0 +1,146 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@500&display=swap');
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.card{
+    border-radius: 1rem;
+}
+
+.container{
+    margin:10vw auto;
+}
+
+.card-img-top{
+    height:50%;
+}
+
+.box1{
+    width:37vw;
+}
+
+.box2{
+    width:32vw;
+}
+
+.image{
+    width:10vw;
+    height:7vw;
+}
+
+footer{
+    width:100%;
+    height:30vw;
+}
+
+.text{
+    width:39.7%;
+    margin:0 5vw;
+}
+
+.opinion{
+    box-shadow: 0px 16px 48px #00000029;
+    background: #F8FAFC 0% 0% no-repeat padding-box;
+    height:24vw;
+    border-radius: 2vw;
+    padding:2vw 5vw;
+}
+
+.star{
+    height:12px;
+    width:12px;
+}
+
+.desg{
+    color:grey;
+    font-size: 12px;
+}
+
+.images{
+    width:50px;
+    height:50px;
+}
+
+.stars{
+    height:8px;
+    width:70px;
+}
+
+.opinions{
+    display: none;
+}
+
+.bg-image{
+    background: #F8FAFC padding-box;
+    width:90%;
+    height:110vh;
+    position:absolute;
+    z-index:-1;
+    top:19vw;
+    transform: matrix(-1, 0, 0, -1, 0, 0);
+    -webkit-mask:
+    radial-gradient(var(--r1,160%) var(--r2,68.15%) at top   ,white 79.5%,transparent 80%) top left,
+    radial-gradient(var(--r1,160%) var(--r2,68.15%) at bottom,transparent 79.5%,white 80%) top center,
+    radial-gradient(var(--r1,160%) var(--r2,68.15%) at top   ,white 79.5%,transparent 80%) top right;
+  mask:
+    radial-gradient(var(--r1,160%) var(--r2,68.15%) at top   ,white 79.5%,transparent 80%) top left,
+    radial-gradient(var(--r1,160%) var(--r2,68.15%) at bottom,transparent 79.5%,white 80%) top center,
+    radial-gradient(var(--r1,160%) var(--r2,68.15%) at top   ,white 79.5%,transparent 80%) top right;
+  -webkit-mask-size:33.4% 140%; 
+  -webkit-mask-repeat:no-repeat;
+  mask-size:33.4% 140%;
+  mask-repeat:no-repeat;
+}
+
+.image2{
+    background: #F8FAFC padding-box;
+    position:absolute;
+    z-index:-2;
+    top:120vh;
+    left:5.8vw;
+    width:90%;
+    height:70vh;
+    -webkit-mask:
+    radial-gradient(var(--r1,160%) var(--r2,68.15%) at top   ,white 79.5%,transparent 80%) top left,
+    radial-gradient(var(--r1,160%) var(--r2,68.15%) at bottom,transparent 79.5%,white 80%) top center,
+    radial-gradient(var(--r1,160%) var(--r2,68.15%) at top   ,white 79.5%,transparent 80%) top right;
+  mask:
+    radial-gradient(var(--r1,160%) var(--r2,68.15%) at top   ,white 79.5%,transparent 80%) top left,
+    radial-gradient(var(--r1,160%) var(--r2,68.15%) at bottom,transparent 79.5%,white 80%) top center,
+    radial-gradient(var(--r1,160%) var(--r2,68.15%) at top   ,white 79.5%,transparent 80%) top right;
+  -webkit-mask-size:33.4% 140%; 
+  -webkit-mask-repeat:no-repeat;
+  mask-size:33.4% 140%;
+  mask-repeat:no-repeat;
+}
+
+@media (max-width:1250px) {
+    .opinions{
+        display:flex;
+        justify-content: center;
+        gap:10vw;
+    }
+    .opinion{
+        display: none;
+    }
+}
+
+@media (max-width:750px) {
+    .opinion{
+        display: none;
+    }
+
+    .card-container,.opinions{
+        flex-direction:column;
+        align-items:center
+    }
+    .text,.box1,.box2{
+        width:100%;
+        margin:2vw
+    }
+    .image2{
+        left:12vw;
+    }
+}
